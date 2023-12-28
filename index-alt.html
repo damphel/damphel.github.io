@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="css/font-awesome.min.css" />
 <link rel="stylesheet" href="fonts/flaticon.css" />
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="colors/green.css" id="color" />
+<link rel="stylesheet" href="colors/red.css" id="color" />
 
 </head>
 
@@ -53,29 +53,23 @@
     	<div class="home-wrapper">
 
 	    	<!-- Home Content -->
-	    	<div class="home-content home-photo main-photo dark">
-	    		<div class="overlay overlay-black" data-alpha="60"></div>
-	    		<div class="text-center vertical-center">
-	    			<span class="home-title">Mary Jane <strong>Doe</strong></span>
-	    			<span class="home-caption">The <strong>Mentalist</strong></span>
-	    		</div>
+	    	<div class="home-content home-photo main-photo-alt dark">
+	    		<div class="overlay overlay-black" data-alpha="30"></div>
 	    	</div>
 
-	    	<!-- Start Button -->
-	    	<a href="#" id="btn-start" data-target="next-section"></a>
-
 	    	<!-- Main Nav -->
-	    	<nav id="main-nav">
+	    	<nav id="main-nav" class="visible-on-start">
 	    		<!-- Menu Toggle -->
 	    		<a href="#" class="menu-toggle menu-toggle-destop" data-target="menu-toggle"></a>
 	    		<!-- Content -->
-	            <div class="text-right vertical-center">
+	            <div class="vertical-center">
 	        		<div class="nav-text">
 		        		<div class="my-avatar"><img src="images/photos/my-avatar.jpg" class="img-circle" alt="" /></div>
 		        		<h2 class="margin-bottom-0">Mary Jane <strong>Doe</strong></h2>
 		        		<h6 class="nav-caption">I’m 28 years old proffesional <span class="text-primary">mental coach</span> from Poland.</h6>
 		        	</div>
 	        		<div class="content-buttons">
+	            		<a href="#" class="btn btn-primary btn-lg" data-target="next-section" data-placement="0">Check my resume<i class="icon-after fa fa-chevron-right"></i></a>
 	            		<a href="#" class="btn btn-primary" data-placement="1">Download my CV</a>
 	            		<a href="blog.html" class="btn btn-primary" data-placement="3">Check my Blog</a>
 	                </div>
@@ -86,6 +80,14 @@
 	            	<a href="#" class="btn-next" data-target="next-section"><span>My Resume</span><i class="fa fa-angle-right"></i></a>
 	            </div>
 	    	</nav>
+
+	    	<!-- Mobile intro -->
+	    	<div id="mobile-intro">
+	    		<div class="my-avatar"><img src="images/photos/my-avatar.jpg" class="img-circle" alt="" /></div>
+        		<h2 class="margin-bottom-0">Mary Jane <strong>Doe</strong></h2>
+        		<h6 class="nav-caption">I’m 28 years old proffesional <span class="text-primary">mental coach</span> from Poland.</h6>
+	            <a href="#" class="btn btn-primary" data-target="next-section">Check my Blog</a>
+	    	</div>
 	    	
     	</div>
     </div> 
@@ -159,7 +161,7 @@
 				    					<!-- Skill Bar -->
 				    					<div class="skill-bar">
 					    					<div class="progress">
-											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
 											    <span class="percent">90%</span>
 											  </div>
 											</div>
@@ -168,7 +170,7 @@
 										<!-- Skill Bar -->
 				    					<div class="skill-bar">
 					    					<div class="progress">
-											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+											  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
 											    <span class="percent">60%</span>
 											  </div>
 											</div>
@@ -177,7 +179,7 @@
 										<!-- Skill Bar -->
 				    					<div class="skill-bar">
 					    					<div class="progress">
-											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+											  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
 											    <span class="percent">75%</span>
 											  </div>
 											</div>
@@ -186,7 +188,7 @@
 										<!-- Skill Bar -->
 				    					<div class="skill-bar">
 					    					<div class="progress">
-											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+											  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
 											    <span class="percent">55%</span>
 											  </div>
 											</div>
@@ -225,7 +227,15 @@
 				    				<div class="box-content text-center">
 				    					<!-- Single Chart -->
 				    					<div class="single-chart font-alt">
-				    						<div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="75"><span class="percent"></span></div>
+				    						<div class="chart chart-sm" data-bar-color="#e75e5e" data-track-color="#e5e5e5" data-percent="100"><span class="percent"></span></div>
+				    						<div class="chart-content text-uppercase">	
+				    							<span class="chart-title">Polish</span>
+				    							<span class="chart-caption text-muted">Mother language</span>
+				    						</div>
+				    					</div>
+				    					<!-- Single Chart -->
+				    					<div class="single-chart font-alt">
+				    						<div class="chart chart-sm" data-bar-color="#e75e5e" data-track-color="#e5e5e5" data-percent="75"><span class="percent"></span></div>
 				    						<div class="chart-content text-uppercase">	
 				    							<span class="chart-title">English</span>
 				    							<span class="chart-caption text-muted">Advanced level</span>
@@ -233,7 +243,7 @@
 				    					</div>
 				    					<!-- Single Chart -->
 				    					<div class="single-chart font-alt">
-				    						<div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="25"><span class="percent"></span></div>
+				    						<div class="chart chart-sm" data-bar-color="#e75e5e" data-track-color="#e5e5e5" data-percent="25"><span class="percent"></span></div>
 				    						<div class="chart-content text-uppercase">	
 				    							<span class="chart-title">Spanish</span>
 				    							<span class="chart-caption text-muted">Basic level</span>
@@ -278,11 +288,11 @@
 			<section id="portfolio" class="swiper-slide" data-caption="Look at my <span>works</span>" data-title="My Portfolio">
 				<div class="section-wrapper">
 					<!-- Items List -->
-					<div class="portfolio-list portfolio-dark">
-						<!-- Portfolio Item -->
+					<div class="portfolio-list portfolio-light portfolio-alternative">
+						<!-- Portfolio Item --> 
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project01.jpg" alt="">
+								<img src="images/projects/project11.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Business Courses</span>
@@ -291,7 +301,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project02.jpg" alt="">
+								<img src="images/projects/project12.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team Work Management</span>
@@ -300,7 +310,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project03.jpg" alt="">
+								<img src="images/projects/project13.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Mental Coaching</span>
@@ -309,7 +319,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project04.jpg" alt="">
+								<img src="images/projects/project14.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -318,7 +328,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project07.jpg" alt="">
+								<img src="images/projects/project17.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -327,7 +337,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project06.jpg" alt="">
+								<img src="images/projects/project16.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -336,7 +346,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project05.jpg" alt="">
+								<img src="images/projects/project15.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -345,7 +355,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project08.jpg" alt="">
+								<img src="images/projects/project18.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -354,7 +364,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project09.jpg" alt="">
+								<img src="images/projects/project19.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -363,7 +373,7 @@
 						<!-- Portfolio Item -->
 						<a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
 							<div class="item-photo">
-								<img src="images/projects/project10.jpg" alt="">
+								<img src="images/projects/project20.jpg" alt="">
 							</div>
 							<div class="item-overlay">
 								<span class="item-title">Team work management</span>
@@ -542,10 +552,10 @@
 					</div>
 
 					<!-- Map -->
-					<div class="contact-map dark">
-						<div id="google-map" data-style="dark"></div>
+					<div class="contact-map light">
+						<div id="google-map" data-style="light"></div>
 						<div class="map-overlay">
-							<div class="overlay overlay-black" data-alpha="50"></div>
+							<div class="overlay overlay-white" data-alpha="50"></div>
 							<div class="overlay-content vertical-center ">
 								<div class="owl-carousel" data-single-item="true" data-auto-play="4000">
 									<div>
@@ -580,7 +590,7 @@
 	</div>
 
 	<!-- Main Menu -->
-	<div id="main-menu" class="dark">
+	<div id="main-menu">
 		<!-- Menu Toggle -->
     	<a href="#" id="menu-close"></a>
 		<ul class="nav nav-menu vertical-center">
